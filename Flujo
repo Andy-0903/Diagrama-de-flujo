@@ -1,0 +1,12 @@
+```mermaid
+flowchart TD
+    A[Inicio] --> B[Generar Plan de Mantenimiento Preventivo]
+    B --> C[Asignar Responsables y Recursos]
+    C --> D[Realizar Inspecciones (Diarias, Semanales, Mensuales)]
+    D --> E[Registrar Resultados en el Sistema]
+    E --> F{¿Se detectó una falla?}
+    F -->|Sí| G[Ejecutar Mantenimiento Correctivo]
+    F -->|No| H[Continuar Monitoreo y Actualizar Plan]
+    G --> I[Cierre del Proceso y Reporte]
+    H --> I
+    I --> J[Fin]
